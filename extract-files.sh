@@ -25,9 +25,9 @@ VENDOR=xiaomi
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-AOSP_ROOT="$MY_DIR"/../../..
+WAVE_ROOT="$MY_DIR"/../../..
 
-HELPER="$AOSP_ROOT"/vendor/arrow/build/tools/extract_utils.sh
+HELPER="$WAVE_ROOT"/vendor/wave/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -60,7 +60,7 @@ if [ -z "${SRC}" ]; then
 fi
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$AOSP_ROOT" true "$CLEAN_VENDOR"
+setup_vendor "$DEVICE" "$VENDOR" "$WAVE_ROOT" true "$CLEAN_VENDOR"
 function blob_fixup() {
     case "${1}" in
     vendor/lib/hw/camera.msm8953.so)
