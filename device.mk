@@ -450,19 +450,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# Recorder
-PRODUCT_PACKAGES += \
-    Recorder
-
-# RetroMusic
-PRODUCT_PACKAGES += \
-    RetroMusic
-
 # NotchOverlay
 PRODUCT_PACKAGES += \
     NotchOverlay
-
-# XiaomiParts
-# PRODUCT_PACKAGES += \
-#     XiaomiParts
 
