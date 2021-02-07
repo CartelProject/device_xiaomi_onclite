@@ -12,13 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from onclite device
 $(call inherit-product, device/xiaomi/onclite/device.mk)
 
-# Inherit some coltOS stuff.
-$(call inherit-product, vendor/wave/configs/common.mk)
-
-DEVICE_MAINTAINER := TheAcanthite
+# Inherit some Styx stuff.
+$(call inherit-product, vendor/styx/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := wave_onclite
+PRODUCT_NAME := styx_onclite
 PRODUCT_DEVICE := onclite
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7

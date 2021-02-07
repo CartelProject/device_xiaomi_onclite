@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/wave_onclite.mk
+    $(LOCAL_DIR)/styx_onclite.mk
